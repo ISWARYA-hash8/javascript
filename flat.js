@@ -18,3 +18,4 @@ console.log(new_arr)
 let arrayy = [10,20,30];
 arrayy.fill(101,0,2); //fill( element , start index, end  index)
 console.log(arrayy)
+console.log(arrayy)
