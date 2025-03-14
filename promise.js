@@ -9,4 +9,14 @@ let newPromise = new Promise((resolve,reject)=>{
         reject("Data Not Received")
     }
 })
-newPromise.then( console.log ).catch( console.log )  //promise chaining to avoid hell condition
+//newPromise.then( console.log ).catch( console.log )  //promise chaining to avoid callback hell condition
+//or
+newPromise.then(  (message )=>{
+    console.log(message);
+} )
+.catch( (error) =>{
+    console.log(error)
+})
+.finally( ()=>{
+    console.log("end")
+})
